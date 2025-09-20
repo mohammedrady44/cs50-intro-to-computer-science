@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Birthdays</title>
+    <script src="../static/java.js"></script>
+</head>
+<body>
+    <h1>Birthdays</h1>
+    <form action="/" method="post">
+        <div>
+            <input class = "a" placeholder="name" name = "name" autocomplete="off">
+            <input class = "a"  placeholder="month" name = "month" autocomplete="off">
+            <input class = "a"  placeholder="day" name = "day" autocomplete="off">
+            <input class = "sp" style="display: none;" name = "action">
+        </div>
+        <div style="display: none;" class="bl">
+            <input class = "a" id = "n_1" placeholder="new name" name = "new_name" autocomplete="off">
+            <input class = "a" id = "n_2"  placeholder="new month" name = "new_month" autocomplete="off">
+            <input class = "a" id = "n_3"  placeholder="new day" name = "new_day" autocomplete="off">
+        </div>
+        <button  class = "ab"><b>Add Birthday</b></button>
+        <button type="button" class = "ab"><b>Update Birthday</b></button>
+        <button class = "ab"><b>Delete Birthday</b></button>
+    </form>
+    <h3>All Birthdays</h3>
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Birthday</th>  
+        </tr>
+        {% for i in data %}
+            <tr>
+              <td>{{i[0]}}</td>
+              <td>{{i[1]}}/{{i[2]}}</td>  
+            </tr>
+        {% endfor %}
+
+    </table>
+
+    
+        
+</body>
+</html>

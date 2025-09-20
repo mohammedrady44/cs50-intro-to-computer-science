@@ -1,0 +1,35 @@
+#a
+{
+    padding: 60px 60px 60px 60px;
+    text-align: center;
+    background-color :dodgerblue;
+    color:white;
+    margin-bottom: 60px;
+}
+#b
+{
+    margin-left: 120px;
+}
+hr
+{
+    width: 70%;
+    margin-left: 0px;
+}
+button
+{
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(114, 195, 246);
+    cursor: pointer
+}
+button:hover
+{
+    background-color: rgb(13, 141, 221);
+}
+#c
+{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
